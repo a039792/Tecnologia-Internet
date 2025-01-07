@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="../assets/css/Home.css">
+    <link rel="stylesheet" href="../assets/css/menubarRodape.css">
+</head>
+<body>
+    <!-- Menu -->
+    <header id="cabecalho"></header>
+
+
+
+
+
+
+    <!-- Pode ser retirado .... de aqui-->
+    <script>
+        fetch('../components/Menubar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('cabecalho').innerHTML = data)
+            .catch(erro => console.error('Erro ao carregar o menu:', erro));
+
+    </script>
+    <!-- ...até aqui -->
+
+
+
+
+
+
+
+    <!-- Conteúdo principal -->
+    <section class="imagem-principal">
+        <img src="../assets/images/interior4.jpg" alt="Restaurante Bel Mondo" class="img-principal">
+    </section>
+
+    <section class="secao-info">
+        <div class="cartao-info">
+            <div class="conteudo-info">Sobre o lugar</div>
+        </div>
+        <div class="cartao-info">
+            <div class="conteudo-info">A comida</div>
+        </div>
+        <div class="cartao-info">
+            <div class="conteudo-info">As pessoas</div>
+        </div>
+    </section>
+
+    <footer id="rodape"></footer>
+
+
+    <script src="../assets/javascript/components.js"></script>
+</body>
+</html>
